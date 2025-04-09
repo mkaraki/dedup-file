@@ -1,0 +1,10 @@
+[package]
+name = "dedup-file"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+twox-hash = { version = "2.1.0", features = ["std", "xxhash3_128"] }
+rusqlite = { version = "0.34.0", features = ["bundled"] }
+time = { version = "0.3.41", features = ["std"] }
+colored = "3.0.0"
